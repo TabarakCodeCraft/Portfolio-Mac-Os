@@ -17,7 +17,6 @@ function WindowWrapper(Component, windowKey) {
       const el = ref.current;
       if (!el || !isOpen) return;
       el.style.display = "block";
-
       gsap.fromTo(
         el,
         { scale: 0.8, opacity: 0, y: 40 },
@@ -28,11 +27,10 @@ function WindowWrapper(Component, windowKey) {
     useGSAP(() => {
       const el = ref.current;
       if (!el) return;
-
       const [instance] = Draggable.create(el, {
+        trigger: el.querySelector("#window-header"),
         onPress: () => focusWindow(windowKey),
       });
-
       return () => instance.kill();
     }, []);
 
@@ -48,7 +46,7 @@ function WindowWrapper(Component, windowKey) {
         ref={ref}
         style={{ zIndex }}
         className="absolute"
-        onClick={() => focusWindow(windowKey)}
+        onMouseDown={() => focusWindow(windowKey)}
       >
         <Component {...props} />
       </section>
@@ -58,7 +56,6 @@ function WindowWrapper(Component, windowKey) {
   Wrapped.displayName = `WindowWrapper(${
     Component.displayName || Component.name || "Component"
   })`;
-
   return Wrapped;
 }
 

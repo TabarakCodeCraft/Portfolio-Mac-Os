@@ -54,7 +54,10 @@ const renderText = (text, className, baseWeight = 400) => {
     <span
       key={i}
       className={className}
-      style={{ fontVariationSettings: `'wght' ${baseWeight}` }}
+      style={{ 
+        fontVariationSettings: `'wght' ${baseWeight}`,
+        color: 'inherit' // This ensures it inherits the parent's color
+      }}
     >
       {char === " " ? "\u00A0" : char}
     </span>
@@ -76,14 +79,14 @@ function Welcome() {
 
   return (
     <section id="welcome">
-      <p ref={subtitleRef}>
+      <p ref={subtitleRef} style={{ color: 'var(--text-primary)' }}>
         {renderText(
           "Hey, Im Tabarak! Welcome to my",
           "text-3xl font-georama",
           100
         )}
       </p>
-      <h1 ref={titleRef} className="mt-7">
+      <h1 ref={titleRef} className="mt-7" style={{ color: 'var(--text-primary)' }}>
         {renderText("portfolio.", "text-9xl italic font-georama", 400)}
       </h1>
 
