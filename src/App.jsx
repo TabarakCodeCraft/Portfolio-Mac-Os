@@ -20,9 +20,7 @@ function App() {
     const { theme } = useThemeStore();
 
   useEffect(() => {
-    // Apply theme to document root
     document.documentElement.setAttribute('data-theme', theme);
-    // Or use class approach
     document.documentElement.classList.toggle('dark', theme === 'dark');
   }, [theme]);
 

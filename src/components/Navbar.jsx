@@ -11,7 +11,6 @@ function Navbar() {
     if (id === 4) { // mode icon
       toggleTheme();
     }
-    // Add other icon handlers here
   };
 
   return (

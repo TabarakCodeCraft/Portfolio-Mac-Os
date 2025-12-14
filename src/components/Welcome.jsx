@@ -90,9 +90,9 @@ function Welcome() {
         {renderText("portfolio.", "text-9xl italic font-georama", 400)}
       </h1>
 
-      <div className="small-screen">
+      {/* <div className="small-screen">
         <p>This Portfolio is designed for desktop/tabled screens only.</p>
-      </div>
+      </div> */}
     </section>
   );
 }
