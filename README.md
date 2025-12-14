@@ -1,16 +1,42 @@
-# React + Vite
+# Mac OS Portfolio App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a React-based web application that replicates the macOS desktop interface, designed to create unique and memorable portfolios. Instead of traditional static websites, users can showcase their projects through an interactive desktop environment featuring windows, dock, and familiar macOS elements.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Interactive Desktop**: Navigate through projects using a simulated macOS interface
+- **Window Management**: Open multiple project windows simultaneously
+- **Dock Navigation**: Quick access to different sections via the dock
+- **Responsive Design**: Works across different devices and screen sizes
+- **Customizable Themes**: Support for light and dark modes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## How It Benefits Others
 
-## Expanding the ESLint configuration
+This app allows developers, designers, and creators to present their work in a distinctive and unforgettable way:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Unique Presentation**: Stand out from conventional portfolios with an interactive desktop experience
+- **Engaging User Experience**: Visitors can "explore" projects like browsing a computer, making it more immersive
+- **Memorable Branding**: The macOS aesthetic creates a professional, modern impression that sticks with viewers
+- **Showcase Multiple Projects**: Display various works in separate windows, allowing easy comparison and navigation
+- **Creative Freedom**: Customize the interface to match personal branding while maintaining the familiar macOS feel
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Customize the content in the `src/` directory to add your projects
+
+## Technologies Used
+
+- React
+- Vite
+- CSS Modules
+- ESLint
+- GSAP lip
+
+## Contributing
+
+Feel free to fork and customize this template for your own portfolio needs!
