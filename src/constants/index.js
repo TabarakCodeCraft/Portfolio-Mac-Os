@@ -186,13 +186,13 @@ const photosLinks = [
 ];
 
 const gallery = [
-    {
-        id: 1,
-        img: "/images/gal1.png",
-    },
+    // {
+    //     id: 1,
+    //     img: "/images/gal1.png",
+    // },
     {
         id: 2,
-        img: "/images/gal2.png",
+        img: "/images/me.jpeg",
     },
     {
         id: 3,
@@ -406,7 +406,7 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-28 right-72",
-            imageUrl: "/images/adrian-2.jpg",
+            imageUrl: "/images/me.jpeg",
         },
         {
             id: 3,
@@ -415,7 +415,7 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-52 left-80",
-            imageUrl: "/images/adrian-3.jpeg",
+            imageUrl: "/images/me.jpeg",
         },
         {
             id: 4,
