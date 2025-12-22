@@ -82,12 +82,12 @@ function Welcome() {
       <p ref={subtitleRef} style={{ color: 'var(--text-primary)' }}>
         {renderText(
           "Hey, Im Tabarak! Welcome to my",
-          "text-3xl font-georama",
+          "text-lg sm:text-xl md:text-2xl lg:text-3xl font-georama",
           100
         )}
       </p>
       <h1 ref={titleRef} className="mt-7" style={{ color: 'var(--text-primary)' }}>
-        {renderText("portfolio.", "text-9xl italic font-georama", 400)}
+        {renderText("portfolio.", "text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl italic font-georama", 400)}
       </h1>
 
       {/* <div className="small-screen">
